@@ -1,15 +1,16 @@
 @font-face {
-    font-family: Figtree, serif ;
+    font-family: 'Figtree';
     src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
 body {
+font-family: 'Figtree', serif;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-min-height: 100vh; /* ensure body fills viewport so align-items centers vertically */
-margin: 0 auto; /* remove default page margin */
+min-height: 100vh; 
+margin: 0 auto; 
 background: var(--color-yellow, rgba(244, 208, 78, 1));
 }
 
@@ -21,10 +22,9 @@ height: 32.625rem;
 /* Auto layout */
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
+align-items: flex-start;
 gap: 1.5rem;
-padding: clamp(1rem, 2vw, 2rem); 
+padding: 1.5rem; 
 
 box-sizing: border-box;
 border: 0.0625rem solid var(--color-gray-950, rgba(17, 17, 17, 1));
@@ -35,21 +35,20 @@ background: var(--color-white, rgba(255, 255, 255, 1));
 
 #pic {
 /* Blog Image */
-width: 21rem;
+width: 100%;
 height: 12.5rem;
-margin-block-start: 0;
 border-radius: 0.625rem;
 background: var(--color-yellow, rgba(244, 208, 78, 1));
 }
 
 #content {
 /* Content */
-width: 21rem;
+width: 100%;
 height: 12.125rem;
 /* Auto layout */
 display: flex;
 flex-direction: column;
-justify-content: flex-start;
+justify-content: center;
 align-items: flex-start;
 gap: 0;
 }
@@ -80,7 +79,6 @@ width: 3.625rem;
 height: 1.3125rem;
 color: var(--color-gray-950, rgba(17, 17, 17, 1));
 
-font-family: Figtree;
 font-size: 0.88rem;
 font-weight: 800;
 line-height: 150%;
@@ -95,9 +93,9 @@ color: var(--color-yellow, rgba(244, 208, 78, 1));
 /* Publish Date */
 width: 8.9375rem;
 height: 1.3125rem;
+margin: 1rem 0;
 color: var(--color-gray-950, rgba(17, 17, 17, 1));
 
-font-family: Figtree;
 font-size: 0.875rem;
 font-weight: 500;
 line-height: 150%;
@@ -106,12 +104,11 @@ text-align: left;
 }
 
 h1 {
-width: 21rem;
+width: 100%;
 height: 2.25rem;
-margin: 0;
+margin: 1rem 0;
 color: var(--color-gray-950, rgba(17, 17, 17, 1));
 
-font-family: Figtree;
 font-size: 1.5rem;
 font-weight: 800;
 line-height: 150%;
@@ -124,12 +121,11 @@ color: var(--color-yellow, rgba(244, 208, 78, 1));
 }
 
 #text {
-width: 21rem;
+width: 100%;
 height: 4.5rem;
 margin: 0;
 color: var(--color-gray-500, rgba(107, 107, 107, 1));
 
-font-family: Figtree;
 font-size: 1rem;
 font-weight: 500;
 line-height: 150%;
@@ -139,25 +135,24 @@ text-align: left;
 
 #profile{
 /* Author */
-/* remove fixed width and height to allow content to dictate size */
-/* Auto layout */
 display: flex;
 flex-direction: row;
-align-items: center; /* ensure image and text align on one row */
-justify-content: flex-start;
+justify-content: start;
+align-items: center;
 gap: var(--spacing-150, 0.75rem);
-/* push to the bottom of the card and keep it left-aligned within the container's padding */
-margin-block-start: 0;
+margin: 1rem 0;
 align-self: flex-start;
+width: 100%;
+margin: 0;
+padding-left: 0;
 }
 
 #profile figure {
-display: flex; /* Make figure a flex container */
-flex-direction: row; /* Arrange its children (img, figcaption) in a row */
+display: flex;
+flex-direction: row; 
 align-items: center;
-gap: var(--spacing-150, 0.75rem); /* Add gap between image and figcaption */
+gap: var(--spacing-150, 0.75rem); 
 }
-
 #profile img {
 /* userpic */
 width: 2rem;
@@ -165,13 +160,12 @@ height: 2rem;
 flex: 0 0 2rem;
 }
 
-#profile figcaption { /* Changed from p to figcaption */
+#profile figcaption {
 /* authorname */
-flex: 1 1 auto; /* allow text to take remaining space instead of forcing a new line */
+flex: 1 1 auto;
 height: 2rem;
 color: var(--color-gray-950, rgba(17, 17, 17, 1));
 
-font-family: Figtree;
 font-size: 0.875rem;
 font-weight: 800;
 line-height: 150%;
