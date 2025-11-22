@@ -1,0 +1,178 @@
+@font-face {
+    font-family: Figtree;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh; /* ensure body fills viewport so align-items centers vertically */
+margin: 0 auto; /* remove default page margin */
+background: var(--color-yellow, rgba(244, 208, 78, 1));
+}
+
+#card {
+/* Card */
+width: 384px;
+height: 522px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 24px;
+padding: 24px;
+
+box-sizing: border-box;
+border: 1px solid var(--color-gray-950, rgba(17, 17, 17, 1));
+border-radius: 20px;
+box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+background: var(--color-white, rgba(255, 255, 255, 1));
+}
+
+#pic {
+/* Blog Image */
+width: 336px;
+height: 200px;
+margin-top: 0;
+border-radius: 10px;
+background: var(--color-yellow, rgba(244, 208, 78, 1));
+}
+
+#content {
+/* Content */
+width: 336px;
+height: 194px;
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 0;
+}
+
+
+#tag {
+/* Category */
+width: 82px;
+height: 29px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: var(--spacing-100, 8);
+padding: var(--spacing-50, 4px) var(--spacing-150, 12px) var(--spacing-50, 4px) var(--spacing-150, 12px);
+
+border-radius: 4px;
+background: var(--color-yellow, rgba(244, 208, 78, 1));
+}
+#tag:hover {
+background-color: black;
+}
+
+#tag p {
+/* Learning */
+width: 58px;
+height: 21px;
+color: var(--color-gray-950, rgba(17, 17, 17, 1));
+
+font-family: Figtree;
+font-size: 14px;
+font-weight: 800;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+#tag p:hover {
+color: var(--color-yellow, rgba(244, 208, 78, 1));
+}
+
+#date {
+/* Publish Date */
+width: 143px;
+height: 21px;
+color: var(--color-gray-950, rgba(17, 17, 17, 1));
+
+font-family: Figtree;
+font-size: 14px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+h1 {
+width: 336px;
+height: 36px;
+margin: 0;
+color: var(--color-gray-950, rgba(17, 17, 17, 1));
+
+font-family: Figtree;
+font-size: 24px;
+font-weight: 800;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+h1:hover{
+color: var(--color-yellow, rgba(244, 208, 78, 1));
+}
+
+#text {
+width: 336px;
+height: 72px;
+margin: 0;
+color: var(--color-gray-500, rgba(107, 107, 107, 1));
+
+font-family: Figtree;
+font-size: 16px;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+#profile{
+/* Author */
+width: 129px;
+height: 32px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+gap: var(--spacing-150, 12);
+/* push to the bottom of the card and keep it left-aligned within the container's padding */
+margin-top: auto;
+align-self: flex-start;
+}
+
+#profile img {
+/* userpic */
+width: 32px;
+height: 32px;
+}
+
+#profile p {
+/* authorname */
+width: 85px;
+height: 21px;
+color: var(--color-gray-950, rgba(17, 17, 17, 1));
+
+font-family: Figtree;
+font-size: 14px;
+font-weight: 800;
+line-height: 150%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.attribution { 
+font-size: 11px; text-align: center;
+padding-top: 15px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
